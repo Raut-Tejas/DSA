@@ -38,6 +38,8 @@ class singlyll:
     def deleteLL(self,value):
         t1=self.head
         prev=t1
+        if(t1.data==value):
+            self.head=t1.next
         while(t1.next!=None):
             if(t1.data == value):
                 prev.next=t1.next
@@ -45,7 +47,8 @@ class singlyll:
             else:
                 prev=t1
                 t1=t1.next
-
+        if(t1.data==value):
+            prev.next=None
     #Print LL
     def printll(self):
         t1=self.head
@@ -63,6 +66,6 @@ obj.insertatbeg(5)
 obj.insertatbeg(0)
 obj.insertatmid(25,20)
 obj.insertatmid(35,30)
-obj.deleteLL(35)
+obj.deleteLL(40)
 
 obj.printll()
