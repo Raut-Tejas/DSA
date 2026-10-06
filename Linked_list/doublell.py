@@ -22,6 +22,20 @@ class doublell:
             t=t.next
         t.next=temp     #get a loction of temp node and give last node location to temp.prev node 
         temp.prev=t
+        
+        #insert at middle of value
+    def insertatmid(self,value,x):
+        temp=node(value)
+        t=self.head
+        while(t.next != None):
+            if(t.data == x):
+                temp.next=t.next
+                t.next.prev=temp    
+                t.next=temp
+                temp.prev=t
+                break
+            else:
+                t=t.next
     
     #insert at Begining
     def insertatbegi(self,value):
@@ -47,4 +61,5 @@ obj.insertatend(20)
 obj.insertatend(30)
 obj.insertatend(40)
 obj.insertatbegi(5)
+obj.insertatmid(35,30)
 obj.printdll()
