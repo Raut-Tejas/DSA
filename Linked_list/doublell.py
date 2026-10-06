@@ -49,6 +49,8 @@ class doublell:
     
     #delete node
     def deletell(self,value):
+        if(self.head==None):
+            print("Linked List Are Emply ")
         t=self.head
         if(t.data==value):
               self.head=t.next
