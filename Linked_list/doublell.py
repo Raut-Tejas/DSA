@@ -47,6 +47,21 @@ class doublell:
         self.head.prev=temp
         self.head=temp    
     
+    #delete node
+    def deletell(self,value):
+        t=self.head
+        if(t.data==value):
+              self.head=t.next
+              self.head.prev=None
+              return
+        while(t.next != None):
+            if(t.data==value):
+                t.prev.next=t.next
+                t.next.prev=t.prev
+            t=t.next
+        if(t.data==value):
+                t.prev.next=None
+                
             
     def printdll(self):
         t=self.head
@@ -62,4 +77,9 @@ obj.insertatend(30)
 obj.insertatend(40)
 obj.insertatbegi(5)
 obj.insertatmid(35,30)
+obj.printdll()
+obj.deletell(5)
+obj.deletell(20)
+obj.deletell(40)
+
 obj.printdll()
