@@ -30,7 +30,7 @@ class singlyll:
             temp.next=self.head    # last node points to head
 
 
-    # Display Linked List
+    #display
     def display(self):
 
         if(self.head == None):
@@ -50,7 +50,6 @@ class singlyll:
 
 
 l1=singlyll()
-
 
 l1.insertatend(10)
 l1.insertatend(20)
