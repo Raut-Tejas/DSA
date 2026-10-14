@@ -1,19 +1,25 @@
+# create Queue
+
 class Queue:
-    def __init__(self):
+    def __init__(self):  #create empty list using constructor
         self.iteam=[]
         
+    #isEmpty function check queue is empty or not    
     def isEmpty(self):
         return len(self.iteam)==0
 
+    #insert at end 
     def insert(self,value):
         self.iteam.append(value)
     
+    #delete at first
     def delete(self):
         if self.isEmpty() :
             raise Exception("Queue Is Empty")
         else:
             return self.iteam.pop(0)
     
+    #display a First Element
     def peek(self):
         if self.isEmpty() :
             raise Exception("Queue Is Empty")
