@@ -21,15 +21,14 @@ class Queue:
            return self.iteam[0]
 
 Q1=Queue()
-print(Q1.isEmpty())
 
+print("Check Queue Is Empty :",Q1.isEmpty(),end="\n\n")
 Q1.insert(10)
 Q1.insert(20)
 Q1.insert(30)
 Q1.insert(40)
-
-print(Q1.peek())
-
+print("First Element:",Q1.peek(),end="\n\n")
+print("Pop Elements :",end="\n")
 print(Q1.delete())
 print(Q1.delete())
 print(Q1.delete())
