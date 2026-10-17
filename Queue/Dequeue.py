@@ -43,9 +43,11 @@ q1.insertatfront(10)
 q1.insertatend(30)
 q1.insertatend(40)
 
+Print("Elements Of Dequeue")
 q1.peekatfront()
 q1.peekatend()
 
+print("Delete Elements In Dequeue")
 
 print(q1.deleteatfront())
 print(q1.deleteatend())
