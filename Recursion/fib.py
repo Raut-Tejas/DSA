@@ -1,8 +1,13 @@
+#create function of fib 
+
 def fib(n):
     if n==1 or n==2:
         return 1
     return fib(n-1) + fib(n-2)
 
+
+
+#print fib series
 print(fib(5))
 print(fib(6))
 print(fib(7))
